@@ -18,4 +18,4 @@ Modellizzare la struttura di un database per memorizzare tutti i dati riguardant
 
 Pensiamo a quali entità (tabelle) creare per il nostro database e cerchiamo poi di stabilirne le relazioni. Infine, andiamo a definire le colonne e i tipi di dato di ogni tabella.
 
-Utilizzare [diagrams](https://www.diagrams.net/) per la creazione dello schema. Esportare quindi il diagramma in jpg e caricarlo nella repo.
+Utilizzare [diagrams](https://www.draw.io/) per la creazione dello schema. Esportare quindi il diagramma in jpg e caricarlo nella repo.
