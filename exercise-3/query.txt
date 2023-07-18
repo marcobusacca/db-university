@@ -84,3 +84,15 @@ JOIN :
     ORDER BY `nome_corso_di_laurea` ASC;
     
     /****************************************************************************************************************************************************************/
+
+    QUERY 6
+
+    SELECT DISTINCT `teachers`.`name` as 'nome_insegnante', `teachers`.`surname` as 'cognome_insegnante', `departments`.`name` as 'nome_dipartimento'
+    FROM `departments`
+    JOIN `degrees` ON `departments`.`id` = `degrees`.`department_id`
+    JOIN `courses` ON `degrees`.`id` = `courses`.`degree_id`
+    JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
+    JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+    WHERE `departments`.`name` LIKE 'Dipartimento di Matematica';
+    
+    /****************************************************************************************************************************************************************/
