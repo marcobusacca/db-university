@@ -54,3 +54,12 @@ JOIN :
     WHERE `departments`.`name` LIKE 'Dipartimento di Neuroscienze' AND `degrees`.`level` LIKE 'magistrale';
     
     /****************************************************************************************************************************************************************/
+
+    QUERY 3
+
+    SELECT DISTINCT `teachers`.`id`, `teachers`.`name`, `teachers`.`surname`, `course_teacher`.`course_id`
+    FROM `teachers`
+    JOIN `course_teacher` ON `teachers`.`id` = `course_teacher`.`teacher_id`
+    WHERE `teachers`.`id` = 44;
+    
+    /****************************************************************************************************************************************************************/
