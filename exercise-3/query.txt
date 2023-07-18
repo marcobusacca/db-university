@@ -70,6 +70,6 @@ JOIN :
     FROM `departments`
     JOIN `degrees` ON `departments`.`id` = `degrees`.`department_id`
     JOIN `students` ON `degrees`.`id` = `students`.`degree_id`  
-    ORDER BY `nome_studente`, `students`.`surname` ASC;
+    ORDER BY `nome_studente`, `cognome_studente` ASC;
 
     /****************************************************************************************************************************************************************/
