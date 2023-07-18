@@ -69,6 +69,7 @@ JOIN :
     SELECT `students`.`name` as 'nome_studente', `students`.`surname` as 'cognome_studente', `degrees`.`name` as 'nome_corso_di_laurea', `departments`.`name` as 'nome_dipartimento'
     FROM `departments`
     JOIN `degrees` ON `departments`.`id` = `degrees`.`department_id`
-    JOIN `students` ON `degrees`.`id` = `students`.`degree_id`;
+    JOIN `students` ON `degrees`.`id` = `students`.`degree_id`  
+    ORDER BY `nome_studente`, `students`.`surname` ASC;
 
     /****************************************************************************************************************************************************************/
