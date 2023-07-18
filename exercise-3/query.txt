@@ -73,3 +73,14 @@ JOIN :
     ORDER BY `nome_studente`, `cognome_studente` ASC;
 
     /****************************************************************************************************************************************************************/
+
+    QUERY 5
+
+    SELECT `degrees`.`name` as 'nome_corso_di_laurea', `courses`.`id` as 'id_corso', `teachers`.`id` as 'id_insegnante'
+    FROM `degrees`
+    JOIN `courses` ON `degrees`.`id` = `courses`.`degree_id`
+    JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id`
+    JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`
+    ORDER BY `nome_corso_di_laurea` ASC;
+    
+    /****************************************************************************************************************************************************************/
