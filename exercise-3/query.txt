@@ -45,3 +45,12 @@ JOIN :
     WHERE `degrees`.`name` LIKE 'Corso di Laurea in Economia';
 
     /****************************************************************************************************************************************************************/
+
+    QUERY 2
+
+    SELECT `degrees`.*
+    FROM `departments`
+    JOIN `degrees` ON `departments`.`id` = `degrees`.`department_id`
+    WHERE `departments`.`name` LIKE 'Dipartimento di Neuroscienze' AND `degrees`.`level` LIKE 'magistrale';
+    
+    /****************************************************************************************************************************************************************/
